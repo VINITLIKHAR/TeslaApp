@@ -1,0 +1,1132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Geologica', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.col1 {
+    height: 52px;
+    width: 100%;
+    background-image: radial-gradient(54.97% 272.54% at 27.36% -134.72%, rgba(108, 148, 255, 0.92) 0px, rgba(0, 0, 0, 0.92) 100%);
+    display: flex;
+}
+
+/* left */
+.lefttext {
+    height: inherit;
+    width: 37%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* center */
+.centertext {
+    height: inherit;
+    width: 44%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* right */
+.seedetails {
+    width: 19%;
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.seedetails a {
+    color: white;
+    text-decoration: underline;
+    text-underline-position: under;
+}
+
+a:hover {
+    text-decoration-thickness: 2px;
+    color: white;
+}
+
+.coltext1 {
+    color: white;
+    font-family: 'Geologica', sans-serif;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.col-text {
+    color: white;
+    font-family: 'Geologica', sans-serif;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.col-text span {
+    font-size: 16px;
+    font-weight: 100
+}
+
+.coltext1 span {
+    font-size: 16px;
+    font-weight: 100
+}
+
+/* Navbar  */
+.col-nav {
+    height: 60px;
+    /* width: 100vw; */
+    background: transparent;
+    display: flex;
+    position: relative;
+    /* position: absolute; */
+}
+
+/* Logo */
+.col-logo {
+    height: 60px;
+    width: 22%;
+    /* background: palegreen; */
+    align-items: center;
+    display: flex;
+    box-sizing: border-box;
+    padding-left: 43px;
+    z-index: 1;
+}
+
+.col-logo img {
+    height: 100px;
+    width: auto;
+    cursor: pointer;
+}
+
+/* center */
+nav {
+    display: flex;
+    align-items: center;
+    padding: 0 36px;
+    /* width: 78%; */
+    height: inherit;
+    /* background: green; */
+}
+
+.list-nav a {
+    text-decoration: none;
+    display: inline-block;
+    /* padding: 5px 11px; */
+    padding: 4px 10px;
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+    /* color: black; */
+    font-weight: 600;
+    /* border-radius: 6px;
+    border: 1px solid white; */
+}
+
+.list-nav {
+    display: flex;
+    position: relative;
+    z-index: 1;
+    padding: 5px 0 0 0;
+}
+
+.list-nav a:hover {
+    color: white;
+}
+
+.hover {
+    position: absolute;
+    /* background-color: rgba(128, 128, 128, 0.629); */
+    background-color: rgba(128, 128, 128, 0.733);
+    /* background-color: rgba(120, 120, 120, 0.307); */
+    opacity: 0;
+    height: 33px;
+    width: 85px;
+    border-radius: 6px;
+    transition: all 0.7s;
+    z-index: -1;
+}
+
+/* right */
+.list-nav a:nth-child(7) {
+    padding-right: 148px;
+}
+
+/* ================ Menu =================== */
+.menu {
+    display: none;
+    color: white;
+    background-color: rgba(120, 120, 120, 0.307);
+    height: 33px;
+    width: 78px;
+    border-radius: 6px;
+}
+
+
+.list-nav a:nth-child(1):hover~.hover {
+    width: 81px;
+    opacity: 1;
+    left: 0;
+}
+
+.list-nav a:nth-child(2):hover~.hover {
+    width: 79px;
+    opacity: 1;
+    left: 80px;
+}
+
+.list-nav a:nth-child(3):hover~.hover {
+    width: 78px;
+    opacity: 1;
+    left: 161px;
+}
+
+.list-nav a:nth-child(4):hover~.hover {
+    width: 79px;
+    opacity: 1;
+    left: 240px;
+}
+
+.list-nav a:nth-child(5):hover~.hover {
+    width: 95px;
+    opacity: 1;
+    left: 320px;
+}
+
+.list-nav a:nth-child(6):hover~.hover {
+    width: 105px;
+    opacity: 1;
+    left: 418px;
+}
+
+.list-nav a:nth-child(7):hover~.hover {
+    width: 91px;
+    opacity: 1;
+    left: 526px;
+}
+
+.list-nav a:nth-child(8):hover~.hover {
+    width: 59px;
+    opacity: 1;
+    left: 755px;
+}
+
+.list-nav a:nth-child(9):hover~.hover {
+    width: 78px;
+    opacity: 1;
+    left: 814px;
+}
+
+.list-nav a:nth-child(10):hover~.hover {
+    width: 66px;
+    opacity: 1;
+    left: 890px;
+}
+
+/* Model - 3 car img and inner content */
+/*    Main    */
+.main {
+    height: 100vh;
+    width: 100%;
+    background: black;
+    /* position: relative; */
+    background-image: url(https://digitalassets.tesla.com/tesla-contents/image/upload/h_1800,w_2880,c_fit,f_auto,q_auto:best/Model-3-Main-Hero-Desktop-LHD);
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    background-position: center;
+}
+
+.model3 {
+    font-family: 'Geologica', sans-serif;
+    font-size: 41px;
+    font-weight: 600;
+    padding: 31px 0 2px 0;
+    color: white;
+    text-align: center;
+}
+
+.demodrive1 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.demodrive1 a {
+    color: #eee;
+    text-decoration: underline;
+    text-underline-position: under;
+}
+
+.demodrive1 a:hover {
+    text-decoration-thickness: 2px;
+}
+
+.testingreview {
+    height: 10vh;
+    width: 100%;
+    /* background: purple; */
+    margin-top: 315px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.range {
+    color: white;
+    font-size: 26px;
+    font-weight: bold;
+    padding-right: 72px;
+}
+
+.range1 {
+    color: white;
+    font-size: 26px;
+    font-weight: bold;
+    padding-right: 0;
+}
+
+.smalltext {
+    font-size: 13px;
+}
+
+.btns {
+    display: flex;
+    justify-content: center;
+    margin-top: 14px;
+    z-index: 1;
+    position: relative;
+}
+
+.btns a {
+    text-decoration: none;
+    font-weight: 600;
+    display: block;
+}
+
+.btns button {
+    background: none;
+    text-decoration: none;
+    padding: 6px;
+    width: 19vw;
+    border-radius: 4px;
+}
+
+/* btn--Order NOw */
+.btns .ordernow {
+    background: white;
+    border: none;
+    margin: 0 30px 0 0;
+}
+
+.btns .ordernow a {
+    color: black;
+}
+
+.ordernow:hover {
+    background: rgba(255, 255, 255, 0.815);
+}
+
+/* btn--Demo Drive */
+.btns .demodrive {
+    background: #48434399;
+    border: 3px solid white;
+}
+
+.btns .demodrive a {
+    color: white;
+}
+
+.demodrive:hover {
+    background-color: #fff;
+    transition: 0.7s;
+}
+
+.demodrive:hover a {
+    color: black;
+}
+
+
+/* Main - 2 - img */
+
+.main2 {
+    height: 100vh;
+    background-size: contain;
+    background-image: url(https://digitalassets.tesla.com/tesla-contents/image/upload/h_1800,w_2880,c_fit,f_auto,q_auto:best/model-3-hero-a-desktop);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.rigid {
+    height: 20vh;
+    /* background: red; */
+    width: 50%;
+    float: right;
+    border-left: 4px solid black;
+    margin: 67px 0 0 0;
+}
+
+.rigid1 {
+    height: 20vh;
+    /* background: red; */
+    width: 66%;
+    float: right;
+    border-left: 4px solid black;
+    margin: 20px 0 0 0;
+}
+
+.rigid2 {
+    height: 20vh;
+    /* background: red; */
+    width: 48%;
+    float: right;
+    border-left: 4px solid black;
+    margin: 34px 0 0 0;
+}
+
+.dot2 {
+    /* display: inline-block; */
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background-color: white;
+    margin: -4px 0px 0 -8px;
+    cursor: pointer;
+    border: 2px solid black;
+    float: left;
+    position: relative;
+}
+
+.dot1 {
+    /* display: inline-block; */
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background-color: white;
+    margin: 122px 0px 0 -8px;
+    cursor: pointer;
+    border: 2px solid black;
+    float: left;
+    position: relative;
+}
+
+.text-2 {
+    color: black;
+    font-weight: 600;
+    float: left;
+}
+
+.text-3 {
+    color: black;
+    font-weight: 600;
+    float: left;
+    margin-top: 113px;
+}
+
+/*  Safety-First Design  */
+
+.SafetyFirst {
+    height: 54vh;
+    padding: 0px 0 0 151px;
+}
+
+.text-4 {
+    font-family: 'Geologica', sans-serif;
+    color: black;
+    font-size: 31px;
+    font-weight: 600;
+    line-height: 3;
+}
+
+.text-5 {
+    font-family: 'Geologica', sans-serif;
+    color: #292626;
+}
+
+.text-5 a {
+    color: #292626;
+}
+
+.first {
+    height: 20vh;
+    width: 46%;
+    /* background: palegreen; */
+}
+
+.rating {
+    font-weight: 800;
+}
+
+.second {
+    height: 20vh;
+    width: 46%;
+    /* background: yellow; */
+}
+
+.col2 {
+    display: flex;
+    margin: 30px 0 0 0;
+}
+
+/* Map Image */
+.col8 {
+    height: 75vh;
+    background: grey;
+    display: flex;
+}
+
+.col8 img {
+    height: 75vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    position: absolute;
+}
+
+.innercontent1 {
+    height: inherit;
+    width: 29%;
+    background: none;
+    position: relative;
+    z-index: 1;
+    padding: 0px 0 0 57px;
+}
+
+.review1 {
+    display: inline-block;
+    font-family: 'Geologica', sans-serif;
+    font-weight: bold;
+    font-size: 23px;
+    padding: 54px 48px 0 0;
+}
+
+.text-7 {
+    font-family: 'Geologica', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: #222;
+}
+
+/* Go Anywhere */
+.col3 {
+    height: 52vh;
+    display: flex;
+}
+
+.BeyondLudicrous {
+    height: inherit;
+    width: 44%;
+    /* background: palegreen; */
+    padding: 83px 0 0 151px;
+}
+
+.BeLudic {
+    font-family: 'Geologica', sans-serif;
+    color: black;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.btn-1 a {
+    text-decoration: none;
+    font-weight: 500;
+    display: block;
+    color: black;
+}
+
+.btn-1 {
+    background: none;
+    text-decoration: none;
+    padding: 7px;
+    width: 15vw;
+    border-radius: 4px;
+    display: block;
+    border: 3px solid black;
+    margin: 22px 0 18px 0;
+}
+
+.btn-1:hover {
+    background-color: black;
+    transition: 0.5s;
+}
+
+.btn-1:hover a {
+    color: white;
+}
+
+.text-6 {
+    height: inherit;
+    width: 56%;
+    /* background: purple; */
+    color: grey;
+    font-family: 'Geologica', sans-serif;
+    padding-top: 83px;
+}
+
+.text-6 a {
+    text-decoration: underline;
+    text-underline-position: under;
+    color: grey;
+}
+
+.text-6 a:hover {
+    text-decoration-thickness: 2px;
+}
+
+/* ImageSlider1-Map */
+.Imageslider1 {
+    height: 100vh;
+    background: white;
+    padding: 30px;
+}
+
+.mapinnertextdown {
+    color: black;
+    border: 1px solid black;
+}
+
+.mapslidetextup {
+    color: black;
+    border: 1px solid black;
+    font-weight: 600;
+}
+
+
+/* Image */
+.col4 {
+    height: 75vh;
+    background: grey;
+    display: flex;
+    justify-content: end;
+}
+
+.review2 {
+    display: inline-block;
+    font-family: 'Geologica', sans-serif;
+    font-weight: bold;
+    font-size: 23px;
+    padding: 54px 48px 0 0;
+    color: white;
+}
+
+.col4 img {
+    height: 75vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    position: absolute;
+}
+
+.innercontent2 {
+    height: inherit;
+    background: none;
+    position: relative;
+    z-index: 1;
+    padding: 0px 68px 0 0;
+}
+
+.review2 {
+    display: inline-block;
+    font-family: 'Geologica', sans-serif;
+    font-weight: bold;
+    font-size: 23px;
+    padding: 57px 48px 0 0;
+}
+
+.text-img {
+    font-family: 'Geologica', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: white;
+}
+
+.fa-wifi,
+.fa-car {
+    color: white;
+}
+
+/*    Built Around the Driver   */
+.col5 {
+    height: 44vh;
+    background: black;
+    display: flex;
+}
+
+.exterior {
+    color: white;
+    font-family: 'Geologica', sans-serif;
+    /* font-weight: bold; */
+    font-size: 19px;
+}
+
+.desingforeffic {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.btn-4 a {
+    text-decoration: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+    display: block;
+    color: white;
+}
+
+.btn-4 {
+    background: none;
+    text-decoration: none;
+    padding: 7px;
+    width: 15vw;
+    border-radius: 4px;
+    display: block;
+    border: 3px solid white;
+    margin: 22px 0 18px 0;
+}
+
+.btn-4:hover {
+    background-color: white;
+    transition: 0.5s;
+}
+
+.btn-4:hover a {
+    color: black;
+}
+
+.text-8 {
+    height: inherit;
+    width: 56%;
+    /* background: purple; */
+    color: white;
+    font-family: 'Geologica', sans-serif;
+    padding-top: 113px;
+}
+
+/* ImageSlider-2 */
+.Imageslider2 {
+    height: 100vh;
+    background: black;
+    padding: 30px;
+}
+
+/* First */
+.col6 {
+    height: 67vh;
+    width: 100%;
+    background: black;
+    display: flex;
+}
+
+.left {
+    height: inherit;
+    width: 55%;
+    background: none;
+}
+
+.left img {
+    height: 54vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+    left: 95px;
+}
+
+.right {
+    height: inherit;
+    width: 45%;
+    background: none;
+    padding: 72px 0 0 64px;
+}
+
+.desingforeffic {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+    font-weight: 500;
+    text-align: start;
+    line-height: 3;
+}
+
+.text-1 {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+    text-align: start;
+}
+
+/* Better Over Time -- Slider */
+.Imageslider3 {
+    height: 126vh;
+    background: #000;
+}
+
+.bettovetimeslidertext {
+    text-align: start;
+}
+
+.bettovetimeslidertext1 {
+    text-align: start;
+}
+
+.videoslideinnerdiv {
+    position: absolute;
+    z-index: 2;
+    margin: 115px 0 0 176px;
+}
+
+.betterot {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 24px;
+}
+
+.text-9 {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+    font-weight: 600;
+}
+
+/* Red car img */
+.col7 {
+    height: 76vh;
+    background-color: black;
+    background-image: url(https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Model-3-Performance-Hero-Desktop-LHD.jpg);
+    background-size: cover;
+    box-sizing: border-box;
+    background-position: center;
+}
+
+.testingreview1 {
+    height: 10vh;
+    width: 100%;
+    /* background: purple; */
+    /* padding: 584px; */
+    padding: 447px 0 0 0;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-8 a {
+    color: white;
+    text-decoration: underline;
+    text-underline-position: under;
+}
+
+a:hover {
+    text-decoration-thickness: 2px;
+}
+
+/* Quick Acceleration */
+.btn-04 a {
+    text-decoration: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+    display: block;
+    color: white;
+}
+
+.btn-04 {
+    background: none;
+    text-decoration: none;
+    padding: 7px;
+    width: 15vw;
+    border-radius: 4px;
+    display: block;
+    border: 3px solid white;
+    margin: 22px 0 18px 0;
+}
+
+.btn-04:hover {
+    background-color: white;
+    transition: 0.5s;
+}
+
+.btn-04:hover a {
+    color: black;
+}
+
+/* Dual Motor AWD */
+.col9 {
+    height: 44vh;
+    background: black;
+    display: flex;
+}
+
+/* ImageSlider5 */
+.Imageslider5 {
+    height: 125vh;
+    padding: 35px;
+    background: #000;
+}
+
+/* Model 3 Spaces */
+.model-3 {
+    height: 13vh;
+    background: black;
+    display: flex;
+
+}
+
+.model3spaces {
+    height: inherit;
+    width: 35%;
+    /* background: purple; */
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    font-family: 'Geologica', sans-serif;
+    margin-right: 93px;
+}
+
+.model3spaces p {
+    color: white;
+    font-size: 27px;
+    font-weight: 700;
+}
+
+.perlong {
+    height: inherit;
+    width: 50%;
+    /* background: palegreen; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid white;
+}
+
+.perlong button {
+    font-weight: bolder;
+    padding: 11px;
+    border: none;
+    margin: 39px;
+    background: none;
+    color: white;
+    cursor: pointer;
+}
+
+.col10 {
+    height: 35vh;
+    background: black;
+    /* display: flex; */
+    padding: 48px 0 0 133px;
+    border-bottom: 1px solid white;
+}
+
+.drive {
+    font-size: 23px;
+    font-weight: 600;
+    color: white;
+    padding-bottom: 14px;
+}
+
+.text-10 {
+    font-weight: 600;
+    font-size: 17px;
+    margin-right: 117px;
+    color: white;
+}
+
+.text-11 {
+    font-weight: 100;
+    color: white;
+}
+
+.flex {
+    display: flex;
+}
+
+
+.col11 {
+    height: 80vh;
+    background: black;
+    padding: 0 0 0 133px;
+    display: flex;
+    border-bottom: 1px solid white;
+
+}
+
+.one {
+    height: inherit;
+    width: 20%;
+    /* background: purple; */
+    padding: 44px 0 0 0;
+}
+
+.two {
+    height: inherit;
+    width: 20%;
+    /* background: paleturquoise; */
+    padding: 107px 0 0 0;
+}
+
+.three {
+    height: inherit;
+    width: 20%;
+    /* background: palevioletred; */
+    padding: 88px 0 0 0;
+}
+
+.four {
+    height: inherit;
+    width: 40%;
+    /* background: peru; */
+    padding: 88px 0 0 0;
+}
+
+.four img {
+    height: 28vh;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.text-12 {
+    font-weight: 600;
+    font-size: 17px;
+    color: white;
+    margin-bottom: 59px;
+}
+
+.col12 {
+    height: 35vh;
+    background: black;
+    padding: 0 0 0 133px;
+    display: flex;
+    border-bottom: 1px solid white;
+}
+
+/* Model3 Black car img */
+.col13 {
+    height: 100vh;
+    background: black;
+    display: flex;
+}
+
+.leftcont {
+    height: inherit;
+    width: 50vw;
+    background: none;
+    padding: 268px 0 0 109px;
+}
+
+.BeLudic1 {
+    font-family: 'Geologica', sans-serif;
+    color: white;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.text-13 {
+    font-family: 'Geologica', sans-serif;
+    color: white;
+}
+
+.text-14 {
+    line-height: 4;
+}
+
+.blackcar {
+    height: inherit;
+    width: 50vw;
+    background: black;
+    background-image: url(https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Model-3-Order-Desktop-Mobile-Global.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.buttons {
+    display: flex;
+}
+
+.btn-3 a {
+    text-decoration: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+    display: block;
+    color: white;
+}
+
+.btn-3 {
+    background: none;
+    text-decoration: none;
+    padding: 7px;
+    width: 15vw;
+    border-radius: 4px;
+    display: block;
+    border: 3px solid white;
+    margin: 22px 0 18px 0;
+}
+
+.btn-3:hover {
+    background-color: white;
+    transition: 0.5s;
+}
+
+.btn-3:hover a {
+    color: black;
+}
+
+.btn-2 {
+    background: #222222;
+    text-decoration: none;
+    padding: 9px;
+    width: 15vw;
+    border-radius: 4px;
+    display: block;
+    border: none;
+}
+
+.btn-2 a {
+    text-decoration: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+    display: block;
+    color: white;
+}
+
+/* footer */
+.footer {
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+}
+
+.text-15 {
+    color: white;
+    font-size: 14px;
+}
+
+.text-15 a {
+    color: white;
+    text-decoration: underline;
+    text-underline-position: under;
+}
+
+.aboutsection {
+    display: flex;
+    justify-content: center;
+    /* margin-top: 9px; */
+    height: 8vh;
+    background: #000;
+}
+
+.aboutsection p a {
+    text-decoration: none;
+    font-family: 'Geologica', sans-serif;
+    font-size: 14px;
+    margin: 7px;
+    color: white;
+    /* font-weight: 600; */
+}

@@ -1,0 +1,797 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Geologica', sans-serif;
+}
+
+/* Navbar  */
+.col-nav {
+    height: 60px;
+    /* width: 100vw; */
+    background: transparent;
+    display: flex;
+    /* display: none; */
+    position: relative;
+    /* position: absolute; */
+}
+
+/* Logo */
+.col-logo {
+    height: 60px;
+    width: 22%;
+    /* background: palegreen; */
+    align-items: center;
+    display: flex;
+    box-sizing: border-box;
+    padding-left: 43px;
+    z-index: 1;
+}
+
+.col-logo img {
+    height: 100px;
+    width: auto;
+    cursor: pointer;
+}
+
+/* center */
+nav {
+    display: flex;
+    align-items: center;
+    padding: 0 36px;
+    /* width: 78%; */
+    height: inherit;
+    /* background: green; */
+}
+
+.list-nav a {
+    text-decoration: none;
+    display: inline-block;
+    /* padding: 5px 11px; */
+    padding: 4px 10px;
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+    /* color: black; */
+    font-weight: 600;
+    /* border-radius: 6px;
+    border: 1px solid white; */
+}
+
+.list-nav {
+    display: flex;
+    position: relative;
+    z-index: 1;
+    padding: 5px 0 0 0;
+}
+
+.list-nav a:hover {
+    color: white;
+}
+
+.hover {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.337);
+    opacity: 0;
+    height: 33px;
+    width: 85px;
+    border-radius: 6px;
+    transition: all 0.7s;
+    z-index: -1;
+}
+
+/* right */
+.list-nav a:nth-child(7) {
+    padding-right: 148px;
+}
+
+/* ================ Menu =================== */
+.menu {
+    display: none;
+    color: white;
+    background-color: rgba(120, 120, 120, 0.307);
+    height: 33px;
+    width: 78px;
+    border-radius: 6px;
+}
+
+
+.list-nav a:nth-child(1):hover~.hover {
+    width: 81px;
+    opacity: 1;
+    left: 0;
+}
+
+.list-nav a:nth-child(2):hover~.hover {
+    width: 79px;
+    opacity: 1;
+    left: 80px;
+}
+
+.list-nav a:nth-child(3):hover~.hover {
+    width: 78px;
+    opacity: 1;
+    left: 161px;
+}
+
+.list-nav a:nth-child(4):hover~.hover {
+    width: 79px;
+    opacity: 1;
+    left: 240px;
+}
+
+.list-nav a:nth-child(5):hover~.hover {
+    width: 95px;
+    opacity: 1;
+    left: 320px;
+}
+
+.list-nav a:nth-child(6):hover~.hover {
+    width: 105px;
+    opacity: 1;
+    left: 418px;
+}
+
+.list-nav a:nth-child(7):hover~.hover {
+    width: 91px;
+    opacity: 1;
+    left: 526px;
+}
+
+.list-nav a:nth-child(8):hover~.hover {
+    width: 59px;
+    opacity: 1;
+    left: 755px;
+}
+
+.list-nav a:nth-child(9):hover~.hover {
+    width: 78px;
+    opacity: 1;
+    left: 814px;
+}
+
+.list-nav a:nth-child(10):hover~.hover {
+    width: 66px;
+    opacity: 1;
+    left: 890px;
+}
+
+/* First--Main */
+/*    Main    */
+.main {
+    height: 100vh;
+    width: 100%;
+    background: black;
+    position: relative;
+    background-image: url(https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/solar-panels-hero-video-desktop-poster.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    background-position: center;
+}
+
+.modelS {
+    font-family: 'Geologica', sans-serif;
+    font-size: 41px;
+    font-weight: 600;
+    padding: 45px 0 2px 0;
+    color: white;
+    text-align: center;
+}
+
+.Exploreinventory {
+    text-align: center;
+}
+
+.Exploreinventory a {
+    color: white;
+    font-size: 15px;
+    text-align: center;
+    font-family: 'Geologica', sans-serif;
+    font-weight: bold;
+    text-decoration: underline;
+    text-underline-position: under;
+}
+
+.Exploreinventory a :hover {
+    text-decoration-thickness: 2px;
+}
+
+.testingreview {
+    height: 10vh;
+    /* width: 100%; */
+    /* background: purple; */
+    margin-top: 303px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.range {
+    font-family: 'Geologica', sans-serif;
+    color: white;
+    font-size: 26px;
+    font-weight: bold;
+    padding-right: 72px;
+}
+
+.range1 {
+    font-family: 'Geologica', sans-serif;
+    color: white;
+    font-size: 26px;
+    font-weight: bold;
+    padding-right: 72px;
+}
+
+.smalltext {
+    font-family: 'Geologica', sans-serif;
+    font-size: 13px;
+}
+
+.btn1 {
+    display: flex;
+    justify-content: center;
+    margin-top: 42px;
+    z-index: 1;
+    position: relative;
+}
+
+.btn1 a {
+    text-decoration: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+    display: block;
+}
+
+.btn1 button {
+    background: none;
+    text-decoration: none;
+    padding: 4px;
+    width: 20vw;
+    border-radius: 4px;
+}
+
+/* btn--Order NOw */
+.btn1 .ordernow {
+    background: white;
+    border: none;
+    margin: 0 30px 0 0;
+}
+
+.btn1 .ordernow a {
+    color: black;
+}
+
+.ordernow:hover {
+    background: rgba(255, 255, 255, 0.815);
+}
+
+/* btn--Demo Drive */
+.btn1 .demodrive {
+    background: #48434399;
+    border: 3px solid white;
+}
+
+.btn1 .demodrive a {
+    color: white;
+}
+
+.demodrive:hover {
+    background-color: #fff;
+    transition: 0.7s;
+}
+
+.demodrive:hover a {
+    color: black;
+}
+
+/* Chatb-Box */
+.chatbox {
+    height: 46px;
+    width: 54px;
+    position: fixed;
+    right: 46px;
+    bottom: 33px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.fa-message {
+    font-size: 24px;
+    padding: 12px 15px;
+}
+
+.chatbox {
+    animation-name: ex;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes ex {
+    from {
+        background-color: black;
+        color: white;
+    }
+
+    to {
+        background-color: white;
+        color: black;
+    }
+}
+
+
+/* Electricity For Less */
+.col2 {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+.leftcont {
+    /* height: 100vh; */
+    width: 33%;
+    /* background: palegreen; */
+    padding: 61px 51px 0 45px;
+    overflow: hidden;
+}
+
+.text-1 {
+    color: #757575;
+    font-size: 18px;
+}
+
+.text-2 {
+    color: black;
+    font-size: 31px;
+    font-weight: 600;
+}
+
+.text-3 {
+    color: gray;
+}
+
+.text-3 a {
+    text-decoration: underline;
+    text-underline-position: under;
+    color: gray;
+}
+
+.text-3 a:hover {
+    text-decoration-thickness: 2px;
+    color: gray;
+}
+
+.btn-3 {
+    border: 3px solid black;
+    padding: 6px;
+    width: 52vh;
+    font-weight: 600;
+    border-radius: 4px;
+    background: white;
+    margin: 190px 0 10px 0;
+}
+
+.btn-3:hover {
+    background: #000;
+    color: white;
+    transition: 0.5s;
+}
+
+.btn-4 {
+    border: none;
+    padding: 7px;
+    width: 52vh;
+    font-weight: 600;
+    border-radius: 4px;
+    background: #f4f4f4;
+}
+
+.rightvideo {
+    height: 100vh;
+    width: 67%;
+}
+
+.rightvideo video {
+    /* height: auto; */
+    width: 100%;
+}
+
+/* Sleek and Durable */
+.col3 {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.leftimg {
+    width: 67%;
+}
+
+.leftimg img {
+    height: 100vh;
+    width: 100%;
+}
+
+/* Clean Aesthetic */
+.col4 {
+    background: #000;
+    padding: 96px 0 43px 302px;
+}
+
+.text-4 {
+    color: white;
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.text-5 {
+    color: white;
+}
+
+.col5 {
+    background: #000;
+    padding: 0 0 0 256px;
+}
+
+.col5 img {
+    height: 600px;
+    width: 88%;
+}
+
+/* 3 division */
+.col6 {
+    background: #000;
+    display: flex;
+    padding: 46px 0 63px 0;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.one,
+.two,
+.three {
+    background: #000;
+    width: 19%;
+    padding-right: 41px;
+}
+
+.text-6 {
+    color: white;
+    padding-bottom: 8px;
+    font-weight: 600;
+}
+
+/* Maximum Durability */
+.col12 {
+    background: #000;
+    padding: 25px 0 38px 264px;
+}
+
+.text-7 {
+    color: white;
+    font-size: 32px;
+    font-weight: 600;
+}
+
+/* First(Less Impact) */
+.first {
+    background: black;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.video1 {
+    width: 50%;
+    /* background: green; */
+    display: flex;
+    justify-content: end;
+}
+
+.video1 video {
+    width: 75%;
+}
+
+.right1 {
+    width: 50%;
+    padding: 117px 183px 0 109px;
+}
+
+.text-8 {
+    color: white;
+    font-size: 22px;
+}
+
+/* Second(No Leaks) */
+.second {
+    background: black;
+    display: flex;
+    flex-wrap: wrap-reverse;
+}
+
+.left1 {
+    width: 50%;
+    /* background: gray; */
+    padding: 122px 96px 0 174px;
+}
+
+.img1 {
+    width: 50%;
+    /* background: green; */
+    padding-top: 20px;
+}
+
+.img1 img {
+    width: 75%;
+}
+
+
+/* Image */
+.col8 {
+    background-image: url(https://digitalassets.tesla.com/tesla-contents/image/upload/h_1800,w_2880,c_fit,f_auto,q_auto:best/PW_Inverter_Hero_D_002);
+    height: 60vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* Home Battery Backup */
+.col9 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.leftdiv {
+    width: 45%;
+    padding: 46px 0 29px 158px;
+}
+
+.btn-5 {
+    border: 3px solid black;
+    padding: 6px;
+    width: 32vh;
+    font-weight: 600;
+    border-radius: 4px;
+    background: white;
+    display: block;
+    margin-bottom: 14px;
+}
+
+.btn-5:hover {
+    background: #000;
+    color: white;
+    transition: 0.5s;
+}
+
+.btn-6 {
+    border: none;
+    padding: 7px;
+    width: 32vh;
+    font-weight: 600;
+    border-radius: 4px;
+    background: #eee;
+}
+
+.rightdiv {
+    width: 55%;
+    padding: 46px 117px 0 0;
+}
+
+
+/* Video */
+.video2 {
+    overflow: hidden;
+}
+
+.video2 video {
+    height: 117vh;
+    width: auto;
+    background-size: cover;
+}
+
+
+/* Order and Installation */
+.col13 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.btn-7 {
+    border: 3px solid black;
+    padding: 6px;
+    width: 32vh;
+    font-weight: 600;
+    border-radius: 4px;
+    background: white;
+    display: block;
+    margin-bottom: 14px;
+    margin-top: 25px;
+}
+
+.btn-7:hover {
+    background: #000;
+    color: white;
+    transition: 0.5s;
+}
+
+.btn-9 {
+    visibility: hidden;
+    border: 3px solid black;
+    padding: 6px;
+    width: 32vh;
+    font-weight: 600;
+    border-radius: 4px;
+    background: white;
+    display: block;
+    margin-bottom: 14px;
+    margin-top: 25px;
+}
+
+.btn-9:hover {
+    background: #000;
+    color: white;
+    transition: 0.5s;
+}
+
+/* Mobile Img */
+.col7 {
+    height: 78vh;
+    background: palegreen;
+    background-image: url(https://digitalassets.tesla.com/tesla-contents/image/upload/h_1800,w_2880,c_fit,f_auto,q_auto:best/SP_tesla_app_D);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/* 24/7 Monitoring */
+.col14 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Solar Panel Specs */
+.col10 {
+    padding-bottom: 237px;
+    background: #000;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.leftimg1 {
+    height: inherit;
+    width: 55%;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.leftimg1 img {
+    height: 75vh;
+}
+
+.rightcontent {
+    height: inherit;
+    width: 45%;
+    /* background: purple; */
+}
+
+.solarroof {
+    font-size: 30px;
+    font-weight: 600;
+    color: white;
+    margin-top: 97px;
+}
+
+.box {
+    display: flex;
+}
+
+.horizontalline {
+    width: 40px;
+    height: 1px;
+    color: white;
+}
+
+.one1 {
+    height: 70vh;
+    width: 39%;
+    /* background: palegreen; */
+}
+
+.two2 {
+    height: 70vh;
+    width: 50%;
+    /* background: #000; */
+}
+
+.text-04 {
+    color: white;
+    font-weight: 600;
+}
+
+.text-05 {
+    color: white;
+}
+
+/* Power Your Home */
+.col11 {
+    /* height: 60vh; */
+    padding-bottom: 100px;
+    background: black;
+    text-align: center;
+}
+
+.text-06 {
+    color: white;
+    font-size: 29px;
+    font-weight: 600;
+}
+
+.btn-8 {
+    border: 3px solid white;
+    color: white;
+    padding: 7px;
+    width: 42vh;
+    font-weight: 600;
+    border-radius: 4px;
+    background: black;
+    display: block;
+    margin: 15px auto;
+}
+
+.btn-8:hover {
+    background: white;
+    color: black;
+    transition: 0.5s;
+}
+
+.btn-08 {
+    background: #393c417a;
+    border: none;
+    color: white;
+    padding: 9px;
+    width: 42vh;
+    font-weight: 600;
+    border-radius: 4px;
+}
+
+.btn-08:hover {
+    background: #8e8e8e6e;
+    transition: 0.5s;
+}
+
+.getupdate a {
+    color: white;
+    margin-top: 15px;
+    text-decoration: underline;
+    text-underline-position: under;
+}
+
+.getupdate {
+    margin-top: 15px;
+}
+
+.getupdate a:hover {
+    text-decoration-thickness: 2px;
+    color: white;
+}
+
+
+/* Footer */
+.aboutsection {
+    background: #000;
+    display: flex;
+    justify-content: center;
+    /* margin-top: 9px; */
+}
+
+.aboutsection p a {
+    text-decoration: none;
+    font-family: 'Geologica', sans-serif;
+    font-size: 14px;
+    margin: 7px;
+    color: #d0d1d2;
+    font-weight: 600;
+}

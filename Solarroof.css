@@ -1,0 +1,666 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Geologica', sans-serif;
+}
+
+/* Navbar  */
+.col-nav {
+    height: 60px;
+    /* width: 100vw; */
+    background: transparent;
+    display: flex;
+    position: relative;
+    /* position: absolute; */
+}
+
+/* Logo */
+.col-logo {
+    height: 60px;
+    width: 22%;
+    /* background: palegreen; */
+    align-items: center;
+    display: flex;
+    box-sizing: border-box;
+    padding-left: 43px;
+    z-index: 1;
+}
+
+.col-logo img {
+    height: 100px;
+    width: auto;
+    cursor: pointer;
+}
+
+/* center */
+nav {
+    display: flex;
+    align-items: center;
+    padding: 0 36px;
+    /* width: 78%; */
+    height: inherit;
+    /* background: green; */
+}
+
+.list-nav a {
+    text-decoration: none;
+    display: inline-block;
+    /* padding: 5px 11px; */
+    padding: 4px 10px;
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+    /* color: black; */
+    font-weight: 600;
+    /* border-radius: 6px;
+    border: 1px solid white; */
+}
+
+.list-nav {
+    display: flex;
+    position: relative;
+    z-index: 1;
+    padding: 5px 0 0 0;
+}
+
+.list-nav a:hover {
+    color: white;
+}
+
+.hover {
+    position: absolute;
+    /* background-color: rgba(0, 0, 0, 0.337); */
+    background-color: gray;
+    opacity: 0;
+    height: 33px;
+    width: 85px;
+    border-radius: 6px;
+    transition: all 0.7s;
+    z-index: -1;
+}
+
+/* right */
+.list-nav a:nth-child(7) {
+    padding-right: 148px;
+}
+
+/* ================ Menu =================== */
+.menu {
+    display: none;
+    color: white;
+    background-color: rgba(120, 120, 120, 0.307);
+    height: 33px;
+    width: 78px;
+    border-radius: 6px;
+}
+
+
+.list-nav a:nth-child(1):hover~.hover {
+    width: 81px;
+    opacity: 1;
+    left: 0;
+}
+
+.list-nav a:nth-child(2):hover~.hover {
+    width: 79px;
+    opacity: 1;
+    left: 80px;
+}
+
+.list-nav a:nth-child(3):hover~.hover {
+    width: 78px;
+    opacity: 1;
+    left: 161px;
+}
+
+.list-nav a:nth-child(4):hover~.hover {
+    width: 79px;
+    opacity: 1;
+    left: 240px;
+}
+
+.list-nav a:nth-child(5):hover~.hover {
+    width: 95px;
+    opacity: 1;
+    left: 320px;
+}
+
+.list-nav a:nth-child(6):hover~.hover {
+    width: 105px;
+    opacity: 1;
+    left: 418px;
+}
+
+.list-nav a:nth-child(7):hover~.hover {
+    width: 91px;
+    opacity: 1;
+    left: 526px;
+}
+
+.list-nav a:nth-child(8):hover~.hover {
+    width: 59px;
+    opacity: 1;
+    left: 755px;
+}
+
+.list-nav a:nth-child(9):hover~.hover {
+    width: 78px;
+    opacity: 1;
+    left: 814px;
+}
+
+.list-nav a:nth-child(10):hover~.hover {
+    width: 66px;
+    opacity: 1;
+    left: 890px;
+}
+
+/* First--Main */
+/*    Main    */
+.main {
+    height: 100vh;
+    width: 100%;
+    background: black;
+    position: relative;
+    background-image: url(https://digitalassets.tesla.com/tesla-contents/image/upload/h_1800,w_2880,c_fit,f_auto,q_auto:best/Solar-Roof-Hero-Desktop-Global);
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    background-position: center;
+}
+
+.modelS {
+    font-family: 'Geologica', sans-serif;
+    font-size: 41px;
+    font-weight: 600;
+    padding: 45px 0 2px 0;
+    color: white;
+    text-align: center;
+}
+
+.Exploreinventory {
+    text-align: center;
+}
+
+.Exploreinventory a {
+    color: white;
+    font-size: 15px;
+    text-align: center;
+    font-family: 'Geologica', sans-serif;
+    font-weight: bold;
+    text-decoration: underline;
+    text-underline-position: under;
+}
+
+.Exploreinventory a :hover {
+    text-decoration-thickness: 2px;
+}
+
+.testingreview {
+    height: 10vh;
+    /* width: 100%; */
+    /* background: purple; */
+    margin-top: 303px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.range {
+    font-family: 'Geologica', sans-serif;
+    color: white;
+    font-size: 26px;
+    font-weight: bold;
+    padding-right: 72px;
+}
+
+.range1 {
+    font-family: 'Geologica', sans-serif;
+    color: white;
+    font-size: 26px;
+    font-weight: bold;
+    padding-right: 72px;
+}
+
+.smalltext {
+    font-family: 'Geologica', sans-serif;
+    font-size: 13px;
+}
+
+.btn1 {
+    display: flex;
+    justify-content: center;
+    margin-top: -20px;
+    z-index: 1;
+    /* position: relative; */
+}
+
+.btn1 a {
+    text-decoration: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+    display: block;
+}
+
+.btn1 button {
+    background: none;
+    text-decoration: none;
+    padding: 9px;
+    width: 16vw;
+    border-radius: 4px;
+}
+
+.btn-1 {
+    display: none;
+}
+
+/* btn--Order NOw */
+.btn1 .ordernow {
+    background: transparent;
+    border: none;
+    /* margin: 0 30px 0 0; */
+    border: 3px solid white;
+}
+
+.btn1 .ordernow a {
+    color: white;
+}
+
+.ordernow:hover {
+    background: white;
+    transition: 0.5s;
+}
+
+.ordernow:hover a {
+    color: black;
+}
+
+/* Chatb-Box */
+.chatbox {
+    height: 46px;
+    width: 54px;
+    position: fixed;
+    right: 46px;
+    bottom: 33px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.fa-message {
+    font-size: 24px;
+    padding: 12px 15px;
+}
+
+.chatbox {
+    animation-name: ex;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes ex {
+    from {
+        background-color: black;
+        color: white;
+    }
+
+    to {
+        background-color: white;
+        color: black;
+    }
+}
+
+/* Img */
+.col2 {
+    /* height: 57vh; */
+    background: black;
+    background-image: url(https://digitalassets.tesla.com/tesla-contents/image/upload/h_1800,w_2880,c_fit,f_auto,q_auto:best/Solar-Roof-Design-Desktop-Global);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Complement Your Home’s Aesthetic */
+.col3 {
+    /* height: 50vh; */
+    background: white;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.leftdiv1 {
+    /* height: inherit; */
+    width: 34%;
+    /* background: palegreen; */
+    padding: 68px 12px 68px 159px;
+}
+
+.text-1 {
+    color: #393c41;
+    font-size: 21px;
+}
+
+.text-2 {
+    color: black;
+    font-weight: 600;
+    font-size: 31px;
+}
+
+.btn-2 {
+    border: 3px solid black;
+    padding: 7px;
+    width: 31vh;
+    font-weight: 600;
+    border-radius: 4px;
+    background: white;
+}
+
+.btn-2:hover {
+    background: #000;
+    color: white;
+    transition: 0.5s;
+}
+
+.rightdiv1 {
+    /* height: inherit; */
+    width: 66%;
+    /* background: palegoldenrod; */
+    padding: 68px 127px 68px 39px;
+}
+
+.text-3 {
+    color: #393c41;
+    /* font-weight: 600; */
+}
+
+.text-3 a {
+    color: #393c41;
+    text-decoration: underline;
+    text-underline-position: under;
+}
+
+.text-3 a:hover {
+    text-decoration-thickness: 2px;
+    color: #393c41;
+}
+
+/* Protection Against Outages */
+.col4 {
+    height: 100vh;
+    background: white;
+    display: flex;
+}
+
+.leftcont {
+    height: 100vh;
+    width: 31%;
+    /* background: palegreen; */
+    padding: 44px 37px 0 44px;
+}
+
+.btn-3 {
+    border: 3px solid black;
+    padding: 6px;
+    width: 52vh;
+    font-weight: 600;
+    border-radius: 4px;
+    background: white;
+    margin: 217px 0 10px 0;
+}
+
+.btn-3:hover {
+    background: #000;
+    color: white;
+    transition: 0.5s;
+}
+
+.btn-4 {
+    border: none;
+    padding: 7px;
+    width: 52vh;
+    font-weight: 600;
+    border-radius: 4px;
+    background: #f4f4f4;
+}
+
+.rightimg {
+    height: 100vh;
+    width: 69%;
+    background: black;
+}
+
+.rightimg img {
+    background-size: cover;
+    height: inherit;
+    width: 100%;
+}
+
+/* Take on the Elements */
+.col5 {
+    background: #000;
+    height: 100vh;
+    background: white;
+    display: flex;
+}
+
+.leftvideo {
+    height: 100vh;
+    width: 69%;
+    background: black;
+    overflow: hidden;
+}
+
+.leftvideo video {
+    background-size: cover;
+    width: 100%;
+}
+
+.rightcont {
+    height: 100vh;
+    width: 31%;
+    /* background: palegreen; */
+    padding: 44px 37px 0 44px;
+}
+
+
+/* Trusted Expertise */
+.btn-5 {
+    border: 3px solid black;
+    padding: 7px;
+    width: 31vh;
+    font-weight: 600;
+    border-radius: 4px;
+    background: white;
+    margin-top: 26px;
+}
+
+.btn-5:hover {
+    background: #000;
+    color: white;
+    transition: 0.5s;
+}
+
+/* Vidio */
+.col6 {
+    height: 100vh;
+    /* background: palegreen; */
+    overflow: hidden;
+}
+
+.col6 video {
+    height: 93vh;
+    border-radius: 5px;
+    width: 100%;
+}
+
+/* Maximum Solar Production */
+.btn-6 {
+    border: 3px solid black;
+    padding: 6px;
+    width: 32vh;
+    font-weight: 600;
+    border-radius: 4px;
+    background: white;
+    margin: 133px 0 0 0;
+}
+
+.btn-6:hover {
+    background: #000;
+    color: white;
+    transition: 0.5s;
+}
+
+/* Mobile Img */
+.col7 {
+    height: 78vh;
+    background: palegreen;
+    background-image: url(https://digitalassets.tesla.com/tesla-contents/image/upload/h_1800,w_2880,c_fit,f_auto,q_auto:best/SR_tesla_app_D);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Solar Roof Specs */
+.col8 {
+    height: 100vh;
+    background: #000;
+    display: flex;
+}
+
+.leftimg {
+    height: inherit;
+    width: 55%;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.leftimg img {
+    height: 75vh;
+}
+
+.rightcontent {
+    height: inherit;
+    width: 45%;
+    /* background: purple; */
+}
+
+.solarroof {
+    font-size: 30px;
+    font-weight: 600;
+    color: white;
+    margin-top: 97px;
+}
+
+.box {
+    display: flex;
+}
+
+.horizontalline {
+    width: 40px;
+    height: 1px;
+    color: white;
+}
+
+.one {
+    height: 70vh;
+    width: 39%;
+    /* background: palegreen; */
+}
+
+.two {
+    height: 70vh;
+    width: 50%;
+    /* background: #000; */
+}
+
+.text-4 {
+    color: white;
+    font-weight: 600;
+}
+
+.text-5 {
+    color: white;
+}
+
+/* Transform Your Roof */
+.col9 {
+    height: 68vh;
+    background: black;
+    text-align: center;
+}
+
+.text-6 {
+    color: white;
+    font-size: 29px;
+    font-weight: 600;
+}
+
+.btn-7 {
+    border: 3px solid white;
+    color: white;
+    padding: 7px;
+    width: 42vh;
+    font-weight: 600;
+    border-radius: 4px;
+    background: black;
+    display: block;
+    margin: 15px auto;
+}
+
+.btn-7:hover {
+    background: white;
+    color: black;
+    transition: 0.5s;
+}
+
+.btn-8 {
+    background: #393c417a;
+    border: none;
+    color: white;
+    padding: 9px;
+    width: 42vh;
+    font-weight: 600;
+    border-radius: 4px;
+}
+
+.btn-8:hover {
+    background: #8e8e8e6e;
+    transition: 0.5s;
+}
+
+.getupdate a {
+    color: white;
+    margin-top: 15px;
+    text-decoration: underline;
+    text-underline-position: under;
+}
+
+.getupdate {
+    margin-top: 15px;
+}
+
+.getupdate a:hover {
+    text-decoration-thickness: 2px;
+    color: white;
+}
+
+/* Footer */
+.aboutsection {
+    background: #000;
+    display: flex;
+    justify-content: center;
+    /* margin-top: 9px; */
+    height: 8vh;
+}
+
+.aboutsection p a {
+    text-decoration: none;
+    font-family: 'Geologica', sans-serif;
+    font-size: 14px;
+    margin: 7px;
+    color: #d0d1d2;
+    font-weight: 600;
+}
